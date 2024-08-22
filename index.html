@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Assignment-3</title>
+    <script src="https://kit.fontawesome.com/09d011b3bb.js" crossorigin="anonymous"></script>
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css"
       rel="stylesheet"
       type="text/css"/>
@@ -14,6 +15,13 @@
             extend: {
               colors: {
                 clifford: '#da373d',
+                firstGray: '#737373',
+                secondGray: '#494949',
+                thirdGray: '#E9E9E9',
+                iconfirst: '#ABEF5F',
+                btnFirst: rgb(171, 239, 95),
+                btnSecond: rgba(171, 239, 95, 0.5),
+                btnThird: rgba(171, 239, 95, 0.2),
               }
             }
           }
@@ -50,36 +58,27 @@
                 <ul
                   tabindex="0"
                   class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
-                  <li><a>Item 1</a></li>
-                  <li>
-                    <a>Parent</a>
-                    <ul class="p-2">
-                      <li><a>Submenu 1</a></li>
-                      <li><a>Submenu 2</a></li>
-                    </ul>
-                  </li>
-                  <li><a>Item 3</a></li>
+                  <li><a>Home</a></li>
+                  <li class="text-firstGray"><a>Services</a></li>
+                  <li class="text-firstGray"><a>Portfolio</a></li>
+                  <li class="text-firstGray"><a>Blogs</a></li>
+                  <li class="text-firstGray"><a>Contact Us</a></li>
                 </ul>
               </div>
-              <a class="btn btn-ghost text-xl">daisyUI</a>
+              <i class="fa-solid fa-arrow-right transform rotate-[315deg] h-6 w-6 bg-slate-500 rounded-2xl flex justify-center items-center " style="color: #000000;"></i>
+              <a class="text-2xl font-bold"> Rinterio</a>
             </div>
             <div class="navbar-center hidden lg:flex">
               <ul class="menu menu-horizontal px-1">
-                <li><a>Item 1</a></li>
-                <li>
-                  <details>
-                    <summary>Parent</summary>
-                    <ul class="p-2">
-                      <li><a>Submenu 1</a></li>
-                      <li><a>Submenu 2</a></li>
-                    </ul>
-                  </details>
-                </li>
-                <li><a>Item 3</a></li>
+                  <li><a>Home</a></li>
+                  <li class="text-firstGray"><a>Services</a></li>
+                  <li class="text-firstGray"><a>Portfolio</a></li>
+                  <li class="text-firstGray"><a>Blogs</a></li>
+                  <li  class="text-firstGray"><a>Contact Us</a></li>
               </ul>
             </div>
             <div class="navbar-end">
-              <a class="btn">Button</a>
+              <a class="btn btn-sm rounded-2xl">Button</a>
             </div>
           </div>
     </nav>
